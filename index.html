@@ -1,698 +1,820 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-53VFDRC");
-    </script>
-    <!-- End Google Tag Manager -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#E63D00" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#E63D00" />
-    <meta
-      name="description"
-      content="Web Developer in Mumbai, UI Developer in Mumbai, Web Developer in Vasai, UI Developer in Vasai, Web Developer in Vasai-Virar, UI Developer in Vasai-Virar"
-    />
-    <meta
-      name="msapplication-square310x310logo"
-      content="assets/images/icon.jpg"
-    />
-    <meta
-      name="google-site-verification"
-      content="2gL-ATtdERD00NltFIj6uICjqB5Hg9DNRQGzJNHBAKs"
-    />
-    <link rel="shortcut icon" href="assets/images/favicon.png" />
-    <link rel="apple-touch-icon" href="assets/images/logo.png" />
-    <link rel="icon" sizes="192x192" href="assets/images/myicon.jpg" />
-    <link rel="apple-touch-startup-image" href="assets/images/logo.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      href="assets/fonts/fontawesome-free-5.13.0-web/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/style/style.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script>
-    <title>&lt;Sujeet Vishwakarma/&gt; Portfolio | Software Developer</title>
-  </head>
-  <body class="scrollspy">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-53VFDRC"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <header>
-      <div class="navi-bar">
-        <div class="logo-holder">
-          <a class="theme-white" href=""
-            ><span class="theme-color">&lt;</span>M<img
-              class="logoImg"
-              src="./assets/images/logo.png"
-            />JEEB<span class="theme-color">/&gt;</span></a
-          >
-        </div>
-        <div class="hamburger">
-          <div class="line"></div>
-        </div>
-        <div class="navi-links">
-          <ul class="nav" id="navbar-ms">
-            <li class="active">
-              <a href="#start" class="">Start <span class="">/&gt;</span></a>
-            </li>
-            <li>
-              <a href="#work">Work <span class="">/&gt;</span></a>
-            </li>
-            <li>
-              <a href="#about">About <span class="">/&gt;</span></a>
-            </li>
-            <li>
-              <a href="#contact">Contact <span class="">/&gt;</span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sujeet Vishwakarma – Technical Lead, QA & Automation</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0c10;
+    --bg2: #111318;
+    --bg3: #181c23;
+    --border: rgba(255,255,255,0.07);
+    --gold: #d4a843;
+    --gold-dim: #8a6c28;
+    --gold-glow: rgba(212,168,67,0.12);
+    --teal: #2dd4bf;
+    --teal-dim: rgba(45,212,191,0.12);
+    --text: #e8e6e0;
+    --muted: #7a7870;
+    --muted2: #4a4842;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* GRID BG */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image:
+      linear-gradient(rgba(212,168,67,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(212,168,67,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none; z-index: 0;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.1rem 4rem;
+    background: rgba(10,12,16,0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+  }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+    text-decoration: none;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+
+  /* HERO */
+  #hero {
+    position: relative; z-index: 1;
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 4rem 5rem;
+  }
+  .hero-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .hero-tag::before {
+    content: '';
+    display: inline-block;
+    width: 2.5rem; height: 1px;
+    background: var(--gold);
+  }
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  h1 .gold { color: var(--gold); }
+  .hero-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    color: var(--muted);
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.06em;
+  }
+  .hero-stats {
+    display: flex; gap: 3rem;
+    border-top: 1px solid var(--border);
+    padding-top: 2rem;
+    margin-top: 1rem;
+  }
+  .hero-stat-val {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.2rem; font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .hero-stat-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 0.3rem;
+  }
+  .hero-contact {
+    display: flex; gap: 1.5rem; flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .hero-contact a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--teal);
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    border: 1px solid rgba(45,212,191,0.25);
+    padding: 0.4rem 0.85rem;
+    border-radius: 2px;
+    transition: all 0.2s;
+  }
+  .hero-contact a:hover {
+    background: var(--teal-dim);
+    border-color: var(--teal);
+  }
+
+  /* SECTIONS */
+  section {
+    position: relative; z-index: 1;
+    padding: 6rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--gold);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    display: flex; align-items: center; gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1; height: 1px;
+    background: var(--border);
+    max-width: 180px;
+  }
+  h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 3rem;
+    color: #fff;
+  }
+  h2 em { color: var(--gold); font-style: normal; }
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    max-width: 1200px; margin: 0 auto;
+  }
+
+  /* SUMMARY */
+  .summary-text {
+    font-size: 1.15rem;
+    color: #b0ae9e;
+    line-height: 1.85;
+    max-width: 820px;
+  }
+  .summary-text strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  /* SKILLS */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .skill-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.5rem 1.75rem;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .skill-card:hover {
+    border-color: var(--gold-dim);
+    background: var(--bg3);
+  }
+  .skill-card-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--gold);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .skill-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: #8a9aaa;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 0.25rem 0.6rem;
+    border-radius: 2px;
+  }
+
+  /* INNOVATIONS */
+  .innovations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .innovation-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-top: 2px solid var(--gold);
+    padding: 2rem;
+    border-radius: 0 0 4px 4px;
+    transition: transform 0.2s;
+  }
+  .innovation-card:hover { transform: translateY(-4px); }
+  .inno-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 3.5rem; font-weight: 800;
+    color: rgba(212,168,67,0.12);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .inno-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.1rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.75rem;
+  }
+  .inno-desc {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+  .inno-impact {
+    margin-top: 1.25rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--teal);
+    background: var(--teal-dim);
+    border: 1px solid rgba(45,212,191,0.2);
+    padding: 0.35rem 0.75rem;
+    display: inline-block;
+    border-radius: 2px;
+  }
+
+  /* EXPERIENCE */
+  .timeline { position: relative; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--gold), var(--border));
+  }
+  .timeline-item {
+    padding-left: 2.5rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -4px; top: 0.6rem;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--gold);
+    border: 2px solid var(--bg);
+    box-shadow: 0 0 12px rgba(212,168,67,0.4);
+  }
+  .timeline-meta {
+    display: flex; align-items: baseline; gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+  .timeline-role {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.25rem; font-weight: 700;
+    color: #fff;
+  }
+  .timeline-company {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--gold);
+    letter-spacing: 0.06em;
+    border: 1px solid var(--gold-dim);
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+  }
+  .timeline-period {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    margin-left: auto;
+  }
+  .timeline-bullets {
+    list-style: none;
+    margin-top: 1rem;
+  }
+  .timeline-bullets li {
+    font-size: 0.9rem;
+    color: #8a9090;
+    line-height: 1.65;
+    padding: 0.45rem 0;
+    padding-left: 1.25rem;
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+  }
+  .timeline-bullets li::before {
+    content: '›';
+    position: absolute; left: 0;
+    color: var(--gold-dim);
+    font-size: 1rem;
+  }
+  .timeline-bullets li strong { color: #c8c4b8; font-weight: 500; }
+
+  /* HIGHLIGHTS ROW */
+  .highlights {
+    display: flex; gap: 1rem; flex-wrap: wrap;
+    margin-top: 1.25rem;
+  }
+  .highlight-pill {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: #7aa8a0;
+    background: rgba(45,212,191,0.06);
+    border: 1px solid rgba(45,212,191,0.15);
+    padding: 0.3rem 0.7rem;
+    border-radius: 2px;
+  }
+
+  /* CERTIFICATIONS */
+  .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+  }
+  .cert-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold);
+    padding: 1.5rem 1.75rem;
+    border-radius: 0 4px 4px 0;
+    display: flex; align-items: flex-start; gap: 1rem;
+  }
+  .cert-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--gold);
+  }
+  .cert-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 1rem; font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.25rem;
+  }
+  .cert-org {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+  }
+
+  /* EDUCATION */
+  .edu-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    padding: 1.75rem 2rem;
+    border-radius: 4px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 1rem;
+  }
+  .edu-degree {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.2rem; font-weight: 700; color: #fff;
+    margin-bottom: 0.3rem;
+  }
+  .edu-college {
+    font-size: 0.88rem; color: var(--muted); max-width: 480px;
+  }
+  .edu-year {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem; color: var(--gold);
+    border: 1px solid var(--gold-dim);
+    padding: 0.35rem 0.8rem; border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  /* DOMAIN EXPERTISE BANNER */
+  .domain-banner {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-top: 2px solid var(--gold);
+    padding: 2.5rem 3rem;
+    border-radius: 0 0 4px 4px;
+    margin-bottom: 4rem;
+  }
+  .domain-banner h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+  }
+  .domain-pills { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .domain-pill {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--text);
+    background: var(--gold-glow);
+    border: 1px solid rgba(212,168,67,0.2);
+    padding: 0.4rem 0.9rem;
+    border-radius: 2px;
+  }
+
+  /* FOOTER */
+  footer {
+    position: relative; z-index: 1;
+    border-top: 1px solid var(--border);
+    padding: 2.5rem 4rem;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 1rem;
+  }
+  .footer-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 1rem; font-weight: 700; color: #fff;
+  }
+  .footer-note {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem; color: var(--muted);
+    letter-spacing: 0.08em;
+  }
+  .footer-contact {
+    display: flex; gap: 1.25rem;
+  }
+  .footer-contact a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem; color: var(--teal);
+    text-decoration: none; letter-spacing: 0.06em;
+  }
+  .footer-contact a:hover { color: var(--gold); }
+
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    #hero { padding: 0 1.5rem 3.5rem; }
+    section { padding: 4rem 1.5rem; }
+    .innovations-grid { grid-template-columns: 1fr; }
+    .timeline-period { margin-left: 0; }
+    footer { padding: 2rem 1.5rem; flex-direction: column; align-items: flex-start; }
+    .hero-stats { gap: 2rem; flex-wrap: wrap; }
+    .domain-banner { padding: 1.75rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">SV // Portfolio</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#innovations">Innovations</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Credentials</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero" style="max-width:none; padding-top: 0;">
+  <div class="hero-tag">Technical Lead · QA & Automation Engineering</div>
+  <h1>Sujeet<br><span class="gold">Vishwakarma</span></h1>
+  <p class="hero-title">// BFSI & Payments Domain Expert · Java · Selenium· Playwright· Appium · SWIFT MT/MX · ISO 20022· UPI · ISTQB Advanced· IMPS · NEFT· RTGS· PFMS · NACH</p>
+  <div class="hero-contact">
+    <a href="mailto:vishwakarmasujeet97@gmail.com">✉ vishwakarmasujeet97@gmail.com</a>
+    <a href="tel:9503334109">✆ +91 9503334109</a>
+    <a href="https://linkedin.com/in/sujeet-vishwakarma-18a085175" target="_blank">in LinkedIn</a>
+    <a>📍 Mumbai, India</a>
+  </div>
+  <div class="hero-stats">
     <div>
-      <section id="start">
-        <div class="sec-body">
-          <h4 class="sec-title">Start /&gt;</h4>
-          <div class="intro">
-            <h1>
-              Hi, my name is
-              <span class="theme-color">Sujeet&nbsp;Vishwakarma</span><br />
-              I'm <span class="emp-font">a System Engineer</span><br />
-              Wants <span class="emp-font">To become a Software Developer</span><br />
-              Skilled in <span class="emp-font">Python,PHP,LAMP and other trending technologies</span><br />
-              
-            </h1>
-            <p class="side-text">Let me show You...</p>
-          </div>
-          <div class="scroll-cmd">
-            <a href="#work" class="theme-color"
-              ><span>SCROLL</span><img src="assets/images/mouse.png"
-            /></a>
-          </div>
-        </div>
-      </section>
-
-      <section id="work">
-        <div class="sec-body">
-          <h4 class="sec-title">Work /&gt;</h4>
-          <div class="website-container">
-            <h1 class="bigWeb"></h1>
-            <div class="work-gallery">
-              <!-- <h2>Selected websites...</h2> -->
-              <!-- <div class="wkCard-wrapper container"> -->
-                <!-- <div
-                  class="wkCard portrait"
-                  data-tilt
-                  data-tilt-glare
-                  data-tilt-max-glare="0.15"
-                >
-                  <a href="http://ashulaservision.com/" target="_blank">
-                    <div class="cardTxt">
-                      <div class="lWrap">
-                        <div class="title">
-                          Ashu <br />
-                          Laser <br />
-                          Vision
-                        </div>
-                        <div class="serial code-font">
-                          <span>00</span><br />
-                          <span class="arr">&rarr;</span>
-                        </div>
-                      </div>
-                      <div class="logo">
-                        <img src="./assets/images/ashulogo.png" alt="" />
-                      </div>
-                    </div>
-                  </a>
-                </div> -->
-
-                <!-- <div
-                  class="wkCard landscape"
-                  data-tilt
-                  data-tilt-glare
-                  data-tilt-max-glare="0.15"
-                > -->
-                  <!-- <a href="http://futurevisioneyecare.com/" target="_blank">
-                    <div class="cardTxt">
-                      <div class="lWrap">
-                        <div class="title">
-                          Future <br />
-                          Vision <br />
-                          Eyecare
-                        </div>
-                        <div class="serial code-font">
-                          <span>01</span><br />
-                          <span class="arr">&rarr;</span>
-                        </div>
-                      </div>
-                      <div class="logo">
-                        <img src="./assets/images/futureLogo.JPG" alt="" />
-                      </div>
-                    </div>
-                  </a>
-                </div> -->
-
-              
-
-          <div class="proj-container">
-            <h1 class="bigProj">PROJECTS</h1>
-            <div class="work-gallery">
-              <h2>Selected personal projects...</h2>
-              <div class="pjCard-wrapper container">
-                <div
-                  class="pjCard landscape"
-                  data-tilt
-                  data-tilt-glare
-                  data-tilt-max-glare="0.15"
-                >
-                  <a id="indulgeVidMod">
-                    <div class="cardTxt">
-                      <div class="lWrap">
-                        <div class="title">
-                          Indulge <br />
-                          Billing <br />
-                          System
-                        </div>
-                        <div class="serial code-font">
-                          <span>00</span><br />
-                          <span class="arr">&rarr;</span>
-                        </div>
-                      </div>
-                      <div class="logo">
-                        <img src="./assets/images/play-btn.png" alt="" />
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div
-                  class="pjCard portrait"
-                  data-tilt
-                  data-tilt-glare
-                  data-tilt-max-glare="0.15"
-                >
-                  <a href="./eResume.html" target="_blank">
-                    <div class="cardTxt">
-                      <div class="lWrap">
-                        <div class="title">E-Resume</div>
-                        <div class="serial code-font">
-                          <span>01</span><br />
-                          <span class="arr">&rarr;</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about">
-        <div class="sec-body">
-          <h4 class="sec-title">About /&gt;</h4>
-          <div class="code-font abt-data">
-            <div class="row">
-              <div class="line-no">
-                <span>01</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-theme">class</span>
-                <span class="syntax-yellow">Sujeet Vishwakarma</span>
-                <span class="syntax-bracket">{</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>02</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">..</span
-                ><span class="syntax-comment"
-                  >// I'm ambitious and love new challenges :)</span
-                >
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>03</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">..</span
-                ><span class="syntax-comment"
-                  >// My mini variety of skills is continuously expanding.</span
-                >
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>04</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">..</span
-                ><span class="syntax-theme">constructor</span
-                ><span class="syntax-bracket">() {</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>05</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">....</span
-                ><span class="syntax-red">this</span
-                ><span class="syntax-bracket">.</span
-                ><span class="syntax-green1">name</span>
-                <span class="syntax-red">=</span>
-                <span class="syntax-green2">'Sujeet Vishwakarma'</span
-                ><span class="syntax-bracket">;</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>06</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">....</span
-                ><span class="syntax-red">this</span
-                ><span class="syntax-bracket">.</span
-                ><span class="syntax-green1">dateOfBirth</span>
-                <span class="syntax-red">=</span>
-                <span class="syntax-green2">'01/08/1997'</span
-                ><span class="syntax-bracket">;</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>07</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">....</span
-                ><span class="syntax-red">this</span
-                ><span class="syntax-bracket">.</span
-                ><span class="syntax-green1">email</span>
-                <span class="syntax-red">=</span>
-                <span class="syntax-green2"
-                  >'vishwakarmasujeet97@gmail.com'</span
-                ><span class="syntax-bracket">;</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>08</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">..</span
-                ><span class="syntax-bracket">}</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>09</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">..</span
-                ><span class="syntax-yellow">workExperience</span
-                ><span class="syntax-bracket">() {</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>10</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">....</span
-                ><span class="syntax-theme">return</span>
-                <span class="syntax-bracket">[</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>11</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">......</span
-                ><span class="syntax-bracket">{</span>
-                <span class="syntax-green2">'2018-now'</span>
-                <span class="syntax-bracket">:</span>
-                <span class="syntax-green2"
-                  >'System Engineer at Tata Consultancy Services Pvt.
-                  Ltd.'</span
-                >
-                <span class="syntax-bracket">}</span
-                ><span class="syntax-bracket">,</span>
-              </div>
-            </div>
-            <!-- <div class="row">
-              <div class="line-no">
-                <span>12</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">......</span
-                ><span class="syntax-bracket">{</span>
-                <span class="syntax-green2">'2018-2019'</span
-                ><span class="syntax-bracket">:</span>
-                <span class="syntax-green2"
-                  >'Web Developer at 2 Tech Brothers'</span
-                >
-                <span class="syntax-bracket">}</span>
-              </div>
-            </div> -->
-            <div class="row">
-              <div class="line-no">
-                <span>13</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">....</span
-                ><span class="syntax-bracket">]</span
-                ><span class="syntax-bracket">;</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>14</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">..</span
-                ><span class="syntax-bracket">}</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>15</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">..</span
-                ><span class="syntax-yellow">education</span
-                ><span class="syntax-bracket">() {</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>16</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">....</span
-                ><span class="syntax-theme">return</span>
-                <span class="syntax-bracket">[</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>17</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">......</span
-                ><span class="syntax-bracket">{</span>
-                <span class="syntax-green2">'2015-2018'</span
-                ><span class="syntax-bracket">:</span>
-                <span class="syntax-green2"
-                  >'B.Sc(IT) - Mumbai University'</span
-                >
-                <span class="syntax-bracket">}</span
-                ><span class="syntax-bracket">,</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>18</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">......</span
-                ><span class="syntax-bracket">{</span>
-                <span class="syntax-green2">'2013-2015'</span
-                ><span class="syntax-bracket">:</span>
-                <span class="syntax-green2"
-                  >'H.S.C (Science) - Allahabad Board'</span
-                >
-                <span class="syntax-bracket">}</span
-                ><span class="syntax-bracket">,</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>19</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">......</span
-                ><span class="syntax-bracket">{</span>
-                <span class="syntax-green2">'2012-2013'</span
-                ><span class="syntax-bracket">:</span>
-                <span class="syntax-green2">'S.S.C - Allahabad Board'</span>
-                <span class="syntax-bracket">}</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>20</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">....</span
-                ><span class="syntax-bracket">]</span
-                ><span class="syntax-bracket">;</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>21</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">..</span
-                ><span class="syntax-bracket">}</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>22</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">..</span
-                ><span class="syntax-yellow">skills</span
-                ><span class="syntax-bracket">() {</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>23</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">....</span
-                ><span class="syntax-theme">return</span>
-                <span class="syntax-bracket">[</span>
-                <span class="syntax-green2"
-                  >'HTML5', 'CSS3', 'Python', 'PHP', 'MySQL','Linux','LAMP','Apache','Tomcat' </span
-                ><span class="syntax-green2"
-                  >'Core Java','Jenkins','Shell
-                  Scripting','Docker','DevOps','AWS'</span
-                >
-                <span class="anim-cursor"></span>
-                <span class="syntax-bracket">&nbsp;]</span
-                ><span class="syntax-bracket">;</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>24</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-dot">..</span
-                ><span class="syntax-bracket">}</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="line-no">
-                <span>25</span>
-              </div>
-              <div class="abt-line">
-                <span class="syntax-bracket">}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact">
-        <div class="sec-body">
-          <h4 class="sec-title">Contact /&gt;</h4>
-          <div class="cont-wrapper">
-            <div class="cont-data">
-              <h4>Find me on:</h4>
-              <div class="social-links">
-                <div class="row">
-                  <a
-                    class="theme-color"
-                    href="https://www.linkedin.com/in/sujeet-vishwakarma-18a085175"
-                    target="_blank"
-                    ><i class="fab fa-linkedin-in"></i> SujeetVishwakarma</a
-                  >
-                  <a
-                    class="theme-color"
-                    href="https://twitter.com/iamvishwa01"
-                    target="_blank"
-                    ><i class="fab fa-twitter"></i> @iamvishwa01</a
-                  >
-                  <a
-                    class="theme-color"
-                    href="https://github.com/iamvishwa01"
-                    target="_blank"
-                    ><i class="fab fa-github"></i> github.com/iamvishwa01</a
-                  >
-                </div>
-                <div class="row">
-                  <a
-                    class="theme-color"
-                    href="https://www.facebook.com/iamvishwa01"
-                    target="_blank"
-                    ><i class="fab fa-facebook"></i> Sujeet Vishwakarma</a
-                  >
-                  <a
-                    class="theme-color"
-                    href="https://www.instagram.com/iamvishwa01/"
-                    target="_blank"
-                    ><i class="fab fa-instagram"></i> @iamvishwa01</a
-                  >
-                  <!-- <a
-                    class="theme-color"
-                    href="https://wa.me/+919503334109?text=Hi%20Mujeeb,%20I'm%20interested%20in%20your%20profile"
-                    target="_blank"
-                    ><i class="fab fa-whatsapp"></i> (+91) 8408 06 5509</a
-                  > -->
-                </div>
-                <div class="row">
-                  <!-- <a
-                    class="theme-color"
-                    href="mailto:vishwakarmasujeet97@gmail.com"
-                    target="_blank"
-                    ><i class="fas fa-comment-alt"></i>
-                    vishwakarmasujeet97@gmail.com</a
-                  > -->
-                  <a class="theme-color" href="./eResume.html" target="_blank"
-                    ><i class="fas fa-file"></i>e-Resume</a
-                  >
-                </div>
-              </div>
-              <div class="contact-btn">
-                <button id="getInTch" class="code-font">GET IN TOUCH</button>
-              </div>
-            </div>
-            <div class="copyR code-font">
-              <p>
-                &copy; Made with <span class="big">&lt;/&gt;</span> by DedSec,
-                2021
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="contact-steps-wrapper">
-          <div class="contact-steps-body">
-            <i id="closeForm" class="fa fa-times"></i>
-            <div>
-              <div class="steps-head">
-                <h2>Get in touch!</h2>
-              </div>
-              <form id="contForm">
-                <div class="contact-steps">
-                  <div>
-                    Hi,&nbsp;my&nbsp;name&nbsp;is
-                    <div class="d-inline">
-                      <input type="text" id="nameInput" />
-                      <label for="nameInput" class="placeholder"
-                        >your&nbsp;name</label
-                      >
-                    </div>
-                    and&nbsp;my&nbsp;email&nbsp;is
-                    <div class="d-inline">
-                      <input type="text" id="emailInput" />
-                      <label for="emailInput" class="placeholder"
-                        >your&nbsp;email</label
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="contact-steps">
-                  <div>
-                    I'm&nbsp;interested&nbsp;in
-                    <div class="d-inline">
-                      <input type="text" id="interestInput" />
-                      <label for="interestInput" class="placeholder"
-                        >job offer</label
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="contact-steps">
-                  <div>
-                    Your&nbsp;message:
-                    <div class="d-inline">
-                      <input type="text" id="messageInput" />
-                      <label for="messageInput" class="placeholder"
-                        >Hi, Sujeet</label
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="contact-steps">
-                  <div>Sending...</div>
-                </div>
-              </form>
-              <div class="steps-nav">
-                <span class="step"
-                  >STEP <span class="curr-step">1</span>/4</span
-                >
-                <div class="contact-btn">
-                  <button id="nextStep" class="code-font">NEXT &rarr;</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <hr class="theme-bg-color timeline" />
+      <div class="hero-stat-val">7+</div>
+      <div class="hero-stat-label">Years Experience</div>
     </div>
+    <div>
+      <div class="hero-stat-val">80%</div>
+      <div class="hero-stat-label">Automation Coverage Achieved</div>
+    </div>
+    <div>
+      <div class="hero-stat-val">80%</div>
+      <div class="hero-stat-label">Regression Time Reduced</div>
+    </div>
+    <div>
+      <div class="hero-stat-val">60%</div>
+      <div class="hero-stat-label">Script Creation Time Cut</div>
+    </div>
+    <div>
+      <div class="hero-stat-val">3</div>
+      <div class="hero-stat-label">Custom Tools Built</div>
+    </div>
+  </div>
+</section>
 
-    <div class="cur-follo"><div class="outer-cir"></div></div>
+<hr class="divider">
 
-    <!-- video modal -->
-    <div id="indulgeModal">
-      <i id="closeVid" class="fa fa-times"></i>
-      <div class="video-container">
-        <div id="player"></div>
-        <!-- <iframe src="https://www.youtube.com/embed/4-GMGyH9dGw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">01 · About</div>
+  <h2>Engineering <em>Quality</em> at Scale</h2>
+
+  <div class="domain-banner">
+    <h3>BFSI & Payments Domain Coverage</h3>
+    <div class="domain-pills">
+      <span class="domain-pill">SWIFT MT103</span>
+      <span class="domain-pill">SWIFT MT202</span>
+      <span class="domain-pill">MT202COV</span>
+      <span class="domain-pill">ISO 20022</span>
+      <span class="domain-pill">pacs.008</span>
+      <span class="domain-pill">pacs.009</span>
+      <span class="domain-pill">UPI</span>
+      <span class="domain-pill">IMPS</span>
+      <span class="domain-pill">NEFT</span>
+      <span class="domain-pill">RTGS</span>
+      <span class="domain-pill">NACH</span>
+      <span class="domain-pill">Actimize (AML)</span>
+      <span class="domain-pill">Fircosoft (Compliance)</span>
+    </div>
+  </div>
+
+  <p class="summary-text">
+    An accomplished <strong>Technical Lead in Test Automation &amp; Quality Engineering</strong> with 7 years of experience embedded deeply in the BFSI and payments domain. I architect and deliver end-to-end automation strategies across web, mobile, and API layers — using Selenium (Java), Appium, and RestAssured — within high-stakes Agile and CI/CD environments.
+    <br><br>
+    My expertise spans the full payment messaging landscape including <strong>SWIFT MT/MX message validation</strong>, <strong>ISO 20022 XML format testing</strong>, and high-volume payment rails from UPI to RTGS. I have hands-on experience validating financial crime compliance tools like <strong>Actimize and Fircosoft</strong>. Beyond execution, I build — including custom Eclipse plugins, locator recorders, and test data generators — tools that have measurably improved team productivity across the board.
+  </p>
+</section>
+
+<hr class="divider">
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">02 · Skills</div>
+  <h2>Technical <em>Arsenal</em></h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-card-title">Automation Tools</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Selenium WebDriver</span>
+        <span class="skill-tag">Playwright</span>
+        <span class="skill-tag">Appium</span>
+        <span class="skill-tag">RestAssured</span>
+        <span class="skill-tag">SoapUI</span>
+        <span class="skill-tag">Postman</span>
+        <span class="skill-tag">Selenium Grid</span>
       </div>
     </div>
-  </body>
-  <script src="/assets/script/vanilla-tilt.js"></script>
-  <script src="assets/script/main.js"></script>
+    <div class="skill-card">
+      <div class="skill-card-title">Frameworks & Patterns</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Cucumber BDD</span>
+        <span class="skill-tag">TestNG</span>
+        <span class="skill-tag">JUnit</span>
+        <span class="skill-tag">Page Object Model</span>
+        <span class="skill-tag">Hybrid Framework</span>
+		<span class="skill-tag">Data Driven Framework</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-title">Languages & Scripting</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Bash Scripting</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-title">CI/CD & DevOps</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Jenkins</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">GitLab</span>
+        <span class="skill-tag">Maven</span>
+        <span class="skill-tag">CI/CD Pipeline</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-title">Databases & Cloud</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Oracle SQL</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">AWS</span>
+        <span class="skill-tag">VMware</span>
+        <span class="skill-tag">Oracle VirtualBox</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-title">Project Management & Bug Tracking Tools</div>
+      <div class="skill-tags">
+        <span class="skill-tag">JIRA</span>
+        <span class="skill-tag">YouTrack</span>
+		<span class="skill-tag">RT(Request Tracker)</span>
+      </div>
+    </div>
+	<div class="skill-card">
+      <div class="skill-card-title">Tools, Servers & IDE's</div>
+      <div class="skill-tags">
+         <span class="skill-tag">Linux</span>
+        <span class="skill-tag">Unix</span>
+        <span class="skill-tag">PuTTY</span>
+        <span class="skill-tag">WinSCP</span>
+        <span class="skill-tag">Cursor (AI IDE)</span>
+		<span class="skill-tag">Eclipse IDE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- INNOVATIONS -->
+<section id="innovations">
+  <div class="section-label">03 · Key Innovations</div>
+  <h2>Tools I <em>Built</em></h2>
+  <div class="innovations-grid">
+    <div class="innovation-card">
+      <div class="inno-num">01</div>
+      <div class="inno-title">Eclipse Plugin</div>
+      <p class="inno-desc">
+        A custom Eclipse Plugin <b>(ClickTestPro)</b> for UI, API, and Mobile test script development. Streamlines script creation with guided workflows directly in the IDE environment used by the entire Automation team.
+      </p>
+      <span class="inno-impact">↓ ~50% script creation time</span>
+    </div>
+    <div class="innovation-card">
+      <div class="inno-num">02</div>
+      <div class="inno-title">Locator Recorder</div>
+      <p class="inno-desc">
+        A recorder tool that captures multi-strategy UI element locators — ID, XPath, CSS, Name — and auto-generates framework-compatible Selenium scripts exported to java classes.
+      </p>
+      <span class="inno-impact">↓ Significant script onboarding time</span>
+    </div>
+    <div class="innovation-card">
+      <div class="inno-num">03</div>
+      <div class="inno-title">Test Data Generator for UI and API</div>
+      <p class="inno-desc">
+        Auto-creates boundary, blank, and special-character test combinations. Removes the manual burden of test data preparation while improving coverage of edge cases.
+      </p>
+      <span class="inno-impact">↑ Test coverage · ↓ Manual prep effort</span>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label">04 · Experience</div>
+  <h2>Career <em>Journey</em></h2>
+
+  <div class="timeline">
+
+    <!-- Job 1 -->
+    <div class="timeline-item">
+      <div class="timeline-meta">
+        <span class="timeline-role">Technical Lead – Quality Engineering</span>
+        <span class="timeline-company">Montran Services</span>
+        <span class="timeline-period">Feb 2025 – Present</span>
+      </div>
+      <ul class="timeline-bullets">
+        <li>Lead a <strong>cross-functional automation team</strong> across web, mobile, and API projects; manage task allocation, escalation, and senior management reporting.</li>
+        <li>Own <strong>end-to-end test automation strategy</strong>: requirements analysis, test data management, environment coordination, and coverage governance.</li>
+        <li>Architect and maintain reusable frameworks using <strong>Selenium (Java), Appium, and RestAssured</strong> with Page Object Model.</li>
+        <li>Validate <strong>SWIFT MT/MX message flows</strong> (MT103, MT202, MT202COV) and <strong>ISO 20022 XML payment messages</strong> (pacs.008, pacs.009) end-to-end.</li>
+        <li>Integrate automated suites into <strong>Jenkins CI/CD pipelines</strong>, enabling continuous regression coverage and faster release feedback.</li>
+        <li>Conduct <strong>skill-gap audits</strong> and drive targeted upskilling programs to ensure UAT capability transfer across squads.</li>
+        <li>Authored <strong>test strategy documents, automation runbooks</strong>, and onboarding guides for new team members.</li>
+      </ul>
+      <div class="highlights">
+        <span class="highlight-pill">Team Leadership</span>
+        <span class="highlight-pill">SWIFT MT/MX</span>
+        <span class="highlight-pill">ISO 20022</span>
+        <span class="highlight-pill">Jenkins CI/CD</span>
+        <span class="highlight-pill">Automation Strategy</span>
+      </div>
+    </div>
+
+    <!-- Job 2 -->
+    <div class="timeline-item">
+      <div class="timeline-meta">
+        <span class="timeline-role">Senior Automation Test Engineer</span>
+        <span class="timeline-company">PNV Techno Consulting (Client: Montran)</span>
+        <span class="timeline-period">Apr 2022 – Jan 2025</span>
+      </div>
+      <ul class="timeline-bullets">
+        <li>Built reusable, scalable automation frameworks <strong>from scratch</strong> for Web, Mobile (Android/Appium), and API (RestAssured), reducing regression execution time by <strong>~80%</strong>.</li>
+        <li>Achieved <strong>~80% automation coverage</strong> across core payment modules including UPI, IMPS, NEFT, RTGS, and NACH flows.</li>
+        <li>Integrated regression suites into Jenkins CI/CD pipelines, <strong>reducing manual regression effort by ~80%</strong>.</li>
+        <li>Set up and managed <strong>Selenium Grid</strong> for parallel cross-browser execution, cutting overall execution time significantly.</li>
+        <li>Conducted <strong>SWIFT MT and ISO 20022 payment message validation</strong> as part of functional and regression cycles.</li>
+        <li>Mentored junior engineers through <strong>code reviews, pair programming</strong>, and knowledge-sharing workshops.</li>
+      </ul>
+      <div class="highlights">
+        <span class="highlight-pill">Framework Architecture</span>
+        <span class="highlight-pill">80% Coverage</span>
+        <span class="highlight-pill">Selenium Grid</span>
+        <span class="highlight-pill">Appium Mobile</span>
+        <span class="highlight-pill">Mentorship</span>
+      </div>
+    </div>
+
+    <!-- Job 3 -->
+    <div class="timeline-item">
+      <div class="timeline-meta">
+        <span class="timeline-role">Automation Test Engineer</span>
+        <span class="timeline-company">Tata Consultancy Services</span>
+        <span class="timeline-period">Aug 2018 – Apr 2022</span>
+      </div>
+      <ul class="timeline-bullets">
+        <li>Developed and maintained web automation scripts using <strong>Selenium WebDriver (Java), TestNG, and Maven</strong>.</li>
+        <li>Built <strong>data-driven test suites</strong> to increase reusability and reduce script maintenance overhead.</li>
+        <li>Tracked and managed defects in <strong>JIRA</strong>, collaborating with developers to ensure timely sprint resolution.</li>
+        <li>Participated in full Agile/Scrum ceremonies including sprint planning, estimation, and retrospectives.</li>
+      </ul>
+      <div class="highlights">
+        <span class="highlight-pill">Selenium WebDriver</span>
+        <span class="highlight-pill">Data-Driven Testing</span>
+        <span class="highlight-pill">TestNG</span>
+        <span class="highlight-pill">Agile/Scrum</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CERTIFICATIONS & EDUCATION -->
+<section id="certifications">
+  <div class="section-label">05 · Credentials</div>
+  <h2>Certified & <em>Educated</em></h2>
+
+  <div class="cert-grid" style="margin-bottom: 2.5rem;">
+    <div class="cert-card">
+      <div class="cert-icon">◆</div>
+      <div>
+        <div class="cert-name">ISTQB Advanced Level</div>
+        <div class="cert-org">Test Automation Engineering</div>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">◆</div>
+      <div>
+        <div class="cert-name">ISTQB Foundation Level</div>
+        <div class="cert-org">Software Testing Certification</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="edu-card">
+    <div>
+      <div class="edu-degree">Bachelor of Science in Information Technology</div>
+      <div class="edu-college">Dr Babasaheb Ambedkar College of Science &amp; Advocate Gurunath Kulkarni College of Commerce</div>
+    </div>
+    <div class="edu-year">Jul 2015 – May 2018</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-name">Sujeet Vishwakarma</div>
+    <div class="footer-note">Technical Lead · QA & Automation · BFSI Domain · Mumbai, India</div>
+  </div>
+  <div class="footer-contact">
+    <a href="mailto:vishwakarmasujeet97@gmail.com">vishwakarmasujeet97@gmail.com</a>
+    <a href="https://linkedin.com/in/sujeet-vishwakarma-18a085175" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+</body>
 </html>
